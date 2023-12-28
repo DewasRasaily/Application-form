@@ -1,8 +1,7 @@
 <div class="container">
-    <div class="title"> 
-       <h1>Leave Application Form</h1>
+    <div class="title">
+        <h1>Leave Application Form</h1>
     </div>
-
 
     <form>
         <div>
@@ -11,62 +10,96 @@
                     <td class="employee-name" colspan="4">
                         <label for="fullName">Employee Name:</label>
                         <input type="text" id="fullName" name="fullName" required>
-                        <button class="button" onclick="alert('Valid data!')">Search</button>  
+                        <button class="button" onclick="alert('Valid data!')">Search</button>
                     </td>
                 </tr>
-            <tr>
-                <td>
-                    <label for="employeeId">Employee Id:</label>
-                    <input type="text" id="employeeId" name="employeeId" required>
-                </td>
-                <td>
-                    <label for="cid">CID:</label>
-                    <input type="text" id="cid" name="cid" required>
-                </td>
-                <td>
-                    <label for="designation">Designation:</label>
-                    <input type="text" id="designation" name="designation" required>
-                </td>
-                <td>
-                    <label for="unitName">Unit Name:</label>
-                    <input type="text" id="unitName" name="unitName" required>
-                </td>
-            </tr>
-            
-            <tr>
-                <td class="employee-name" colspan="4">
-                    <label for="language">Select leave type</label>
-                    <select name="language" id="language">
-                      <option value="Causal leaver">Causal leaver</option>
-                      <option value="el">EL</option>
-                      <option value="ml">ML</option>
-                      <option value="pln">PL</option>
-                      <option value="eol">EoL</option>
-                    </select>
-                    
-                    <input type="radio" id="Wholeday" name="leaveType" value="Wholeday">
-                    <label for="Wholeday">Wholeday</label>
-                    <input type="radio" id="Halfday" name="leaveType" value="Halfday">
-                    <label for="Halfday">Halfday</label>
-               
-                </td>
-            </tr>
-           
+                <tr>
+                    <td>
+                        <label for="employeeId">Employee Id:</label>
+                        <input type="text" id="employeeId" name="employeeId" required>
+                    </td>
+                    <td>
+                        <label for="cid">CID:</label>
+                        <input type="text" id="cid" name="cid" required>
+                    </td>
+                    <td>
+                        <label for="designation">Designation:</label>
+                        <input type="text" id="designation" name="designation" required>
+                    </td>
+                    <td>
+                        <label for="unitName">Unit Name:</label>
+                        <input type="text" id="unitName" name="unitName" required>
+                    </td>
+                </tr>
 
-                <td colspan="4">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </td>
-           
+                <tr>
+                    <td class="employee-name" colspan="4">
+                        <div class="form-row leave-period">
+                            <div class="form-group col-md-4">
+                                <label for="language">Select leave type</label>
+                                <select name="language" id="language" class="form-control">
+                                    <option value="Causal leaver">--Select--</option>
+                                    <option value="el">CL</option>
+                                    <option value="el">EL</option>
+                                    <option value="ml">ML</option>
+                                    <option value="pln">PL</option>
+                                    <option value="eol">EoL</option>
+                                </select>
+                            </div>
 
+                            <div class="abc">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" id="Wholeday" name="leaveType"
+                                        value="Wholeday">
+                                    <label class="form-check-label" for="Wholeday">Wholeday</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" id="Halfday" name="leaveType"
+                                        value="Halfday">
+                                    <label class="form-check-label" for="Halfday">Halfday</label>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
 
-                
-            <tr>
-                <td colspan="4">
-                    <button type="submit">Submit</button>
-                </td>
-            </tr>
-        </table>
-   
-  </div>
-  
+                <tr>
+                    <td colspan="4">
+                        <div>
+                            <label for="leavebalance">Leave balance:</label>
+                        </div>
+                        <div class="leave-period form-row col-12 border p-4"><br>
+                          
+                                 
+                                <div>
+                                    <label for="start-date">From date:</label>
+                                    <input type="date" name="start-date" id="start-date">
+                                </div>
+                                <div>
+                                    <label for="end-date">Date to:</label>
+                                    <input type="date" name="end-date" id="end-date">
+                                </div>
+                                <div>
+                                    <label for="no-of-days">Total no. of days:</label>
+                                    <input type="text" id="no-of-days" name="no-of-days" readonly>
+                                </div>
+                               
+                            </div>
+                      <div>
+                                    <label for="message">Proposal(s) for applying:</label>
+                                    <textarea id="message" name="message" rows="4" required></textarea>
+                                </div>      
+                       
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="4">
+                        <button type="submit">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</div>
+
